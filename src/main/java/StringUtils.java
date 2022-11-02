@@ -4,7 +4,7 @@ public class StringUtils {
 
     public static org.apache.commons.lang3.StringUtils su = new org.apache.commons.lang3.StringUtils();
 
-    public static String wetherIsNumber(String userInput){
+    public static String whetherIsNumber(String userInput){
         if(!su.isNumeric(userInput)){
             return "You entered a String";
         }
@@ -23,10 +23,10 @@ public class StringUtils {
         Scanner sc = new Scanner(System.in);
 
 
-        System.out.println("Enter a number");
+        System.out.println("Enter something...");
         String userInput = sc.nextLine();
 
-        System.out.println(wetherIsNumber(userInput));
+        System.out.println(whetherIsNumber(userInput));
         System.out.println(reverse(userInput));
         System.out.println(flipCase(userInput));
 
